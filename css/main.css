@@ -71,7 +71,7 @@ html, body {
 }
 
 .logo {
-  color: #fff;
+  color: var(--white);
   font-size: 24px;
   font-family: "Poppins", sans-serif;
 }
@@ -90,7 +90,7 @@ html, body {
 }
 
 .nav-list__link {
-  color: #fff;
+  color: var(--white);
 }
 
 .nav-list__link--active {
@@ -106,5 +106,5 @@ html, body {
   display: block;
   height: 2px;
   width: 100%;
-  background-color: #5C62EC;
+  background-color: var(--purple);
 }
