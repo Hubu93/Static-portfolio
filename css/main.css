@@ -46,7 +46,10 @@
 html, body {
     font-family: "DM Sans", sans-serif;
     letter-spacing: -0.5px;
-    color: var(--black)
+    color: var(--black);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* NAV */
@@ -91,6 +94,8 @@ html, body {
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
   align-self: center;
   column-gap: 40px;
   font-size: 16px;
@@ -289,9 +294,18 @@ html, body {
   text-align: center;
 }
 
-.content__list p a {
-  color: var(--purple);
+.content__list p {
+  font-size: 18px;
+}
 
+.content__list p a {
+  color: var(--black);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.content__list p a span {
+  color: var(--purple);
 }
 
 .tittle-2 {
@@ -303,7 +317,7 @@ html, body {
 }
 
 .content__list p {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 40px;
@@ -314,7 +328,8 @@ html, body {
 .footer {
   background-color: var(--dark-bg);
   padding: 60px 0 50px;
-  color: var(--header-text)
+  color: var(--header-text);
+  margin-top: auto;
 }
 
 .footer__wrapper {
@@ -336,4 +351,16 @@ html, body {
 
 .copywrite p + p {
   margin-top: 0.5em ;
+}
+
+
+
+@media (max-width: 620px) {
+  .header__title {
+    font-size: 30px;
+  }
+  
+  .header__title strong{
+    font-size: 40px;
+  }
 }
