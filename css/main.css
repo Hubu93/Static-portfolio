@@ -229,6 +229,7 @@ html, body {
 }
 
 .project {
+
   max-width: 370px;
   background-color: var(--white);
   border-radius: 10px; 
@@ -356,6 +357,11 @@ html, body {
 
 
 @media (max-width: 620px) {
+
+  .header {
+    min-height: unset;
+  }
+
   .header__title {
     font-size: 30px;
   }
@@ -363,4 +369,39 @@ html, body {
   .header__title strong{
     font-size: 40px;
   }
+
+  .section {
+    padding: 40px 0;
+  }
+
+  .title-1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+
+  .project {
+    justify-content: center;
+  }
+
+  .project__title {
+    font-size: 22px;
+  }
+
+  .footer {
+    padding: 40px 0 30px;
+  }
+
+  .social__item {
+    width: 28px;
+  }
+
+  .footer__wrapper {
+    row-gap: 20px;
+  }
+
+  .social {
+    column-gap: 20px;
+  }
+
+
 }
